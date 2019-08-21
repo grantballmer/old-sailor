@@ -1,0 +1,52 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  @include flex(center, center);
+  flex-direction: column;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  background-image: url("../assets/images/hero.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  padding: 10px;
+  text-align: center;
+
+  @include wide-mobile {
+    font-size: 3rem;
+  }
+
+  @include tablet {
+    font-size: 4rem;
+  }
+
+  @include desktop {
+    font-size: 5rem;
+  }
+}
+
+.page-hero {
+  height: 50vh;
+  font-size: 3.4rem;
+  font-weight: 700;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 4%;
+  background-size: cover;
+  background-attachment: unset;
+  text-align: center;
+
+  @include wide-mobile {
+    font-size: 4rem;
+  }
+
+  @include tablet {
+    font-size: 5.4rem;
+  }
+
+  @include desktop {
+    font-size: 8rem;
+    align-items: flex-end;
+  }
+}

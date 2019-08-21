@@ -1,0 +1,47 @@
+.btn {
+  width: 45%;
+  height: 40px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.btn__find {
+  width: 180px;
+}
+
+.btn__close {
+  width: 140px;
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $main-red;
+    color: white;
+    border: 1px solid $main-red;
+  }
+}
+
+.btn__event-contact {
+  width: 240px;
+  @include flex(center, center);
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-bottom: 50px;
+
+  &:hover {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+  }
+}

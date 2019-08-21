@@ -1,0 +1,18 @@
+{
+  "name": "coop-ale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify scripts/main.js -o scripts/bundle.js",
+    "handlebars-compile": "handlebars -f templates/allTemplates.js templates/footer.handlebars templates/menus.handlebars templates/navbar.handlebars templates/beerInfoOverlay.handlebars"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "embedo": "^1.12.0",
+    "handlebars": "^4.1.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+@import "./_mixins.scss";
+@import "./_variables.scss";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+}
+
+.noScroll {
+  position: fixed;
+
+  @include tablet {
+    overflow-y: scroll;
+  }
+}
+
+@import "./_btn.scss";
+
+@import "./_navbar.scss";
+@import "./_sideNav.scss";
+@import "./_hero.scss";
+
+@import "./_menus.scss";
+@import "./_menu-slider.scss";
+@import "./_dropdown.scss";
+@import "./_events.scss";
+@import "./_taproom-beers.scss";
+
+@import "./_main-slider.scss";
+@import "./_beer-info-overlay.scss";
+
+@import "./_newsfeed.scss";
+
+@import "./_footer.scss";
+
+//child pages layout
+@import "./child-pages/_page-slider.scss";
+
+@import "./child-pages/_beer-locator.scss";
+
+@import "./child-pages/_taproom.scss";
+
+@import "./child-pages/_contact.scss";
+
+@import "./child-pages/_about.scss";

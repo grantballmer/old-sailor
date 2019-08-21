@@ -1,0 +1,56 @@
+.dropdown {
+  width: 250px;
+  height: 32px;
+  background-color: $dark-red;
+  margin: 0 auto;
+  padding: 0 4%;
+  font-size: 1.4rem;
+  position: relative;
+  @include flex(space-between, center);
+  z-index: 2;
+  user-select: none;
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  img {
+    height: 20px;
+  }
+
+  &__content {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(32px);
+    background-color: $dark-red;
+    padding: 0 4%;
+    display: none;
+
+    &--region {
+      @include flex(flex-start, center);
+      height: 30px;
+      padding: 0 4%;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid white;
+      }
+
+      &:hover {
+        color: $main-red;
+      }
+    }
+  }
+}
+
+.displayDropdownMenu {
+  display: block;
+}
+
+.activeDropdown {
+  z-index: 3;
+}

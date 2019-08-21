@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Old Sailor Ale Works</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <!-- nav injected from handlebars template -->
+    <header></header>
+
+    <!-- side menus from handlebars -->
+    <section class="menus"></section>
+
+    <!-- Beer info overlay page -->
+    <section class="beer-info-overlay"></section>
+
+    <!-- hero image and text -->
+    <section class="hero">
+      <h2>Quality Beer</h2>
+      <h2>For Quality Living</h2>
+    </section>
+
+    <!-- landing page slick slider start -->
+    <section class="slider-container">
+      <div class="slider-arrow slider-arrow__prev">
+        <img src="./assets/icons/arrow-left.svg" alt="arrow left" />
+      </div>
+      <div class="slider-arrow slider-arrow__next">
+        <img src="./assets/icons/arrow-right.svg" alt="arrow right" />
+      </div>
+      <div class="slider">
+        <div class="slide" data-color="#1c365a">
+          <div class="slide__image" data-beer="haze">
+            <img src="./assets/images/haze-wizard.png" alt="haze wizard can" />
+          </div>
+
+          <div class="slide__text">
+            <h2>Haze Wizard</h2>
+            <h3>Pale Ale</h3>
+            <h4>Year-Round</h4>
+          </div>
+
+          <div class="slide__buttons">
+            <button class="btn btn__more" data-beer="haze">Learn More</button>
+            <button class="btn">Find This</button>
+          </div>
+        </div>
+
+        <div class="slide" data-color="#EFD300">
+          <div class="slide__image" data-beer="gpa">
+            <img src="./assets/images/gpa.png" alt="gpa can" />
+          </div>
+
+          <div class="slide__text">
+            <h2>GPA</h2>
+            <h3>German Pale Ale</h3>
+            <h4>Year-round</h4>
+          </div>
+
+          <div class="slide__buttons">
+            <button class="btn btn__more" data-beer="gpa">Learn More</button>
+            <button class="btn">Find This</button>
+          </div>
+        </div>
+
+        <div class="slide" data-color="#6F4A9F">
+          <div class="slide__image" data-beer="royal">
+            <img src="./assets/images/royal-blood.png" alt="royal blood can" />
+          </div>
+
+          <div class="slide__text">
+            <h2>Royal Blood</h2>
+            <h3>Pale Ale</h3>
+            <h4>Fall Seasonal</h4>
+          </div>
+
+          <div class="slide__buttons">
+            <button class="btn btn__more" data-beer="royal">Learn More</button>
+            <button class="btn">Find This</button>
+          </div>
+        </div>
+
+        <div class="slide" data-color="#31A7A1">
+          <div class="slide__image" data-beer="devout">
+            <img src="./assets/images/devout.png" alt="devout stout can" />
+          </div>
+
+          <div class="slide__text">
+            <h2>Devout Crème Brulee</h2>
+            <h3>Stout</h3>
+            <h4>Year-Round</h4>
+          </div>
+
+          <div class="slide__buttons">
+            <button class="btn btn__more" data-beer="devout">
+              Learn More
+            </button>
+            <button class="btn">Find This</button>
+          </div>
+        </div>
+
+        <div class="slide" data-color="#982221">
+          <div class="slide__image" data-beer="gold">
+            <img src="./assets/images/texas-gold.png" alt="texas gold can" />
+          </div>
+
+          <div class="slide__text">
+            <h2>Texas Gold</h2>
+            <h3>Kream Ale</h3>
+            <h4>Year-Round</h4>
+          </div>
+
+          <div class="slide__buttons">
+            <button class="btn btn__more" data-beer="gold">Learn More</button>
+            <button class="btn">Find This</button>
+          </div>
+        </div>
+
+        <div class="slide" data-color="#E8BF06">
+          <div class="slide__image" data-beer="mango">
+            <img src="./assets/images/mango-smash.png" alt="haze wizard can" />
+          </div>
+
+          <div class="slide__text">
+            <h2>Mango Smash</h2>
+            <h3>IPA</h3>
+            <h4>Year-Round</h4>
+          </div>
+
+          <div class="slide__buttons">
+            <button class="btn btn__more" data-beer="mango">Learn More</button>
+            <button class="btn">Find This</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- social media newsfeed start -->
+    <section class="newsfeed">
+      <h2>The Latest</h2>
+      <div class="newsfeed__cards">
+        <div class="card card__twitter-1">
+          <div class="card__tag">Twitter</div>
+          <div class="card__image"></div>
+          <div class="card__body">
+            Tonight in the
+            <a href="https://twitter.com/hashtag/cooptaproom?src=hash"
+              >#oldsailortaproom</a
+            >, come out for some beer and live music from
+            <a href="https://twitter.com/EricDunkinMusic">@EricDunkinMusic</a>.
+            Taproom is open 4-8pm and music will start around 6.
+          </div>
+          <div class="card__footer">
+            <a
+              class="twitter-share-button"
+              href="https://twitter.com/intent/tweet?text=Hello%20world"
+              data-size="large"
+            >
+              Tweet</a
+            >
+          </div>
+        </div>
+
+        <div class="card card__instagram-1">
+          <div class="card__tag">Instagram</div>
+          <div class="card__image"></div>
+          <div class="card__body">
+            This week for Milkshake Wednesday, we're tapping an Apricot Cobbler
+            Fly Me Away IPA, with apricot, ginger, cinnamon and vanilla.
+            Available Wednesday night only, #oldsailertaproom open 4-8pm.
+          </div>
+          <div class="card__footer"></div>
+        </div>
+
+        <div class="card card__twitter-2">
+          <div class="card__tag">Twitter</div>
+          <div class="card__image"></div>
+          <div class="card__body">
+            <a href="https://twitter.com/hashtag/Toledo?src=hashtag_click"
+              >#Toledo</a
+            >
+            friends, come out tonight and join us for an
+            <a href="https://twitter.com/hashtag/Toledo?src=hashtag_click"
+              >#Oktoberfest</a
+            >
+            pint night at
+            <a href="https://twitter.com/therooftopba">@therooftopba</a>
+            ! From 4pm to close, try our just released fall seasonal + take home
+            a COOP glass.
+          </div>
+          <div class="card__footer">
+            <a
+              href="https://twitter.com/intent/tweet?"
+              class="twitter-hashtag-button"
+              data-size="large"
+              data-show-count="false"
+              >Tweet #Toledo</a
+            >
+          </div>
+        </div>
+
+        <div class="card card__instagram-2">
+          <div class="card__tag">Instagram</div>
+          <div class="card__image"></div>
+          <div class="card__body">
+            Thursday night in the #oldsailortaproom, we'll have live music from
+            @kylereidmusic. Taproom is open 4-8pm and music will start around 6.
+            #ohiomusic #livemusic #craftbeer
+          </div>
+          <div class="card__footer"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inserted from handlebars template -->
+    <footer></footer>
+
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.runtime.min.js"></script>
+
+    <script src="./scripts/bundle.js"></script>
+  </body>
+</html>

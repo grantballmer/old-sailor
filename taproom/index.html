@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Taproom - Coop Ale Works</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <!-- nav injected from handlebars template -->
+    <header></header>
+
+    <!-- side menus from handlebars -->
+    <section class="menus"></section>
+
+    <!-- Beer info overlay page -->
+    <section class="beer-info-overlay"></section>
+
+    <!-- hero image -->
+    <section class="hero page-hero">Taproom</section>
+
+    <section class="taproom-flex">
+      <div class="taproom-flex__item taproom-flex__item--taproom"></div>
+      <div class="taproom-flex__item taproom-flex__item--beer"></div>
+      <div class="taproom-flex__item taproom-flex__item--brewery"></div>
+    </section>
+
+    <section class="taproom-flex taproom-flex__text-container">
+      <div class="taproom-flex__item taproom-flex__text">
+        <h2>The Taproom</h2>
+        <p>
+          The COOP Taproom, located inside the COOP Ale Works brewery at 4745
+          Council Heights Road in Oklahoma City, is open Wednesday through
+          Friday from 4 – 8 p.m. and Saturday from 12 – 8 p.m.
+        </p>
+      </div>
+
+      <div class="taproom-flex__item taproom-flex__text">
+        <h2>The Beer</h2>
+        <p>
+          The COOP Taproom offers 19 rotating beers on tap, including COOP’s
+          annual lineup of favorites, as well as brewery-only releases like
+          Cucumber Saturday Siren, Green Room IPA and Spicy Hawaiian!
+        </p>
+        <p>
+          Grab a cold pack of COOP while you’re there, or buy a special release
+          in our signature Crowler, available exclusively at the taproom!
+        </p>
+      </div>
+
+      <div class="taproom-flex__item taproom-flex__text">
+        <h2>The Brewery</h2>
+        <p>
+          We offer brewery tours every Saturday at 1 p.m. and 6 p.m. Tours are
+          on a first-come, first-serve basis for up to 15 guests per tour. All
+          guests must be 21 years of age and must wear close-toed shoes to
+          access the brewery floor. We recommend getting to the taproom an hour
+          prior to reserve your spot.
+        </p>
+      </div>
+    </section>
+
+    <section class="plan-visit">
+      <h2>Click here to plan your next taproom visit!</h2>
+      <a href="/events" class="btn btn__event-contact">Events Calendar</a>
+      <a href="/contact" class="plan-visit__link"
+        >Want to host a private event in our taproom? Click here</a
+      >
+    </section>
+
+    <!-- Inserted from handlebars template -->
+    <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.runtime.min.js"></script>
+
+    <script src="../scripts/bundle.js"></script>
+  </body>
+</html>

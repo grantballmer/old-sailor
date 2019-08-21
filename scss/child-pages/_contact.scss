@@ -1,0 +1,141 @@
+.contact-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/images/beer-glass.jpg");
+  background-size: cover;
+  background-position: center;
+  @include flex(flex-start, center);
+}
+
+.contact-form-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 50px;
+
+  @include tablet {
+    width: 70%;
+  }
+
+  @include desktop {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+
+    @include tablet {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+
+    @include tablet {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.contact-form-container .numbers {
+  display: flex;
+
+  div {
+    margin-right: 100px;
+
+    @include tablet {
+      margin-right: 175px;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+
+      @include tablet {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+
+.contact-form-container form {
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+  margin-top: 30px;
+
+  @include tablet {
+    margin-top: 50px;
+  }
+
+  label {
+    font-size: 1.4rem;
+    color: rgb(204, 204, 204);
+    margin-bottom: 12px;
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #c6c6c6;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    padding: 10px 0 10px 50px;
+
+    @include wide-mobile {
+      width: 90%;
+    }
+
+    @include tablet {
+      width: 80%;
+    }
+
+    &::placeholder {
+      color: #c6c6c6;
+      opacity: 1;
+    }
+  }
+
+  input[type="text"] {
+    background-image: url("../../assets/icons/person.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+  }
+
+  input[type="email"] {
+    background-image: url("../../assets/icons/email.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+  }
+
+  textarea {
+    background-image: url("../../assets/icons/message.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+  }
+
+  input[type="submit"] {
+    width: 200px;
+    padding-left: 0;
+    border: 1px solid #c6c6c6;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #c6c6c6;
+      color: black;
+    }
+  }
+}

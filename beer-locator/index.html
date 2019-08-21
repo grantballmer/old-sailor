@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Our Beer - Coop Ale Works</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <!-- nav injected from handlebars template -->
+    <header></header>
+
+    <!-- side menus from handlebars -->
+    <section class="menus"></section>
+
+    <!-- Beer info overlay page -->
+    <section class="beer-info-overlay"></section>
+
+    <!-- hero image -->
+    <section class="hero page-hero">Beer Locator</section>
+
+    <section class="beer-locator">
+      <div id="map" class="beer-locator__item"></div>
+
+      <div class="beer-locator__item beer-search">
+        <form>
+          <div class="beer-search__inputs">
+            <input type="search" name="search" placeholder="Enter Zip" />
+            <input type="submit" name="submit" class="btn" value="Find Beer" />
+          </div>
+
+          <div class="beer-search__parameters">
+            <div class="dropdown">
+              <h4 data-input="distance">5 Miles</h4>
+              <img src="../assets/icons/arrow-down.svg" alt="arrow down" />
+              <div class="dropdown__content">
+                <h5 class="dropdown__content--region">10 Miles</h5>
+                <h5 class="dropdown__content--region">25 Miles</h5>
+                <h5 class="dropdown__content--region">100 Miles</h5>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <h4 data-input="type">--</h4>
+              <img src="../assets/icons/arrow-down.svg" alt="arrow down" />
+              <div class="dropdown__content">
+                <h5 class="dropdown__content--region">Bar/Tavern</h5>
+                <h5 class="dropdown__content--region">Hotel</h5>
+                <h5 class="dropdown__content--region">Grocery Store</h5>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <h4 data-input="beer">--</h4>
+              <img src="../assets/icons/arrow-down.svg" alt="arrow down" />
+              <div class="dropdown__content">
+                <h5 class="dropdown__content--region">Haze Wizard</h5>
+                <h5 class="dropdown__content--region">GPA</h5>
+                <h5 class="dropdown__content--region">Royal Blood</h5>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Inserted from handlebars template -->
+    <footer></footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgsXfhN2Desf5gsa9mrT6u_U22xDuZsdE&callback=initMap"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.runtime.min.js"></script>
+
+    <script src="../scripts/bundle.js"></script>
+  </body>
+</html>

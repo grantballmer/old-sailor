@@ -1,0 +1,76 @@
+.main-nav {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include flex(space-between, center);
+  padding: 0 6%;
+  z-index: 6;
+}
+
+.nav-icons {
+  @include flex(center, center);
+  color: white;
+  font-size: 2rem;
+
+  @include tablet {
+    font-size: 3rem;
+  }
+
+  i {
+    margin: 0 8px;
+    cursor: pointer;
+
+    &:hover {
+      color: $main-red;
+    }
+  }
+}
+
+.changeColor i {
+  &:hover {
+    color: white;
+  }
+}
+
+.nav-logo {
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 25%);
+  @include flex(center, center);
+
+  @include wide-mobile {
+    height: 80%;
+  }
+
+  @include tablet {
+    height: 100%;
+  }
+
+  img {
+    max-height: 100%;
+  }
+}
+
+.nav-menu {
+  @include flex(center, center);
+  flex-direction: column;
+  font-size: 1.6rem;
+  color: $main-red;
+  cursor: pointer;
+
+  &__bars {
+    width: 100%;
+
+    span {
+      width: 100%;
+      height: 3px;
+      display: block;
+      background-color: white;
+      margin: 4px 0;
+    }
+  }
+}

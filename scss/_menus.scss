@@ -1,0 +1,57 @@
+.menu {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $main-red;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  z-index: 5;
+  color: white;
+  text-align: center;
+
+  @include tablet {
+    width: 30vw;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+
+.menu__top-border {
+  width: 100%;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: $main-red;
+  z-index: 3;
+}
+
+.displayMenu {
+  transform: translateX(0);
+}
+
+.menu__header {
+  margin-top: 35px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.6rem;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+}
+
+.menu__subheader {
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+
+  &:nth-of-type(2),
+  &:nth-of-type(3) {
+    margin-bottom: 8%;
+  }
+}
