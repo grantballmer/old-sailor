@@ -36,7 +36,7 @@
   }
 
   &--taproom {
-    background-image: url("../../assets/images/taproom.jpg");
+    background-image: url("../assets/images/taproom.jpg");
     display: none;
 
     @include desktop {
@@ -45,7 +45,7 @@
   }
 
   &--beer {
-    background-image: url("../../assets/images/beer-mug.jpg");
+    background-image: url("../assets/images/beer-mug.jpg");
     display: none;
 
     @include desktop {
@@ -54,7 +54,7 @@
   }
 
   &--brewery {
-    background-image: url("../../assets/images/brewery.jpg");
+    background-image: url("../assets/images/brewery.jpg");
   }
 }
 
