@@ -26,8 +26,9 @@ body {
 
 form input {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border-radius: 0;
 }
 
 .btn {
