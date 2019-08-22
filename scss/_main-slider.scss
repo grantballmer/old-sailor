@@ -109,7 +109,12 @@
     text-transform: uppercase;
 
     h2 {
-      font-size: 3rem;
+      font-size: 2rem;
+      text-align: center;
+
+      @include tablet {
+        font-size: 3rem;
+      }
     }
 
     h3 {

@@ -233,7 +233,7 @@ body {
 
 .side-nav__title {
   position: absolute;
-  left: 6%;
+  left: 12px;
   top: 100px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -254,13 +254,31 @@ body {
   line-height: 0.8;
 }
 
+@media (min-width: 812px) {
+  .side-nav__title {
+    left: 6%;
+  }
+}
+
 .side-nav__title h2 {
   color: white;
-  font-size: 3.4rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 812px) {
+  .side-nav__title h2 {
+    font-size: 3.4rem;
+  }
 }
 
 .side-nav__title h3 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 812px) {
+  .side-nav__title h3 {
+    font-size: 2.4rem;
+  }
 }
 
 .side-nav__menu {
@@ -324,19 +342,26 @@ body {
 .side-nav__menu--list a {
   color: white;
   text-decoration: none;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
-  margin: 2% 0;
+  margin: 4px 0;
+}
+
+@media (min-width: 550px) {
+  .side-nav__menu--list a {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 812px) {
   .side-nav__menu--list a {
     font-size: 4.5rem;
+    margin: 2% 0;
   }
 }
 
@@ -1114,7 +1139,14 @@ body {
 }
 
 .slide__text h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 812px) {
+  .slide__text h2 {
+    font-size: 3rem;
+  }
 }
 
 .slide__text h3 {
@@ -1492,12 +1524,26 @@ body {
 }
 
 .card {
-  width: 230px;
-  height: 400px;
+  width: 143.75px;
+  height: 345px;
   max-height: 400px;
   margin: 20px 12px;
   border-radius: 8px;
   position: relative;
+}
+
+@media (min-width: 550px) {
+  .card {
+    width: 172.5px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 812px) {
+  .card {
+    width: 230px;
+    height: 400px;
+  }
 }
 
 .card__tag {
@@ -1523,24 +1569,37 @@ body {
 
 .card__image {
   width: 100%;
-  height: 35%;
+  height: 25%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   background-size: cover;
   background-position: center;
 }
 
+@media (min-width: 812px) {
+  .card__image {
+    height: 35%;
+  }
+}
+
 .card__body {
   width: 100%;
-  height: 55%;
+  height: 65%;
   background-color: white;
   border-bottom: 0.5px solid grey;
   color: black;
   padding: 4%;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 300;
+}
+
+@media (min-width: 812px) {
+  .card__body {
+    height: 55%;
+    font-size: 1.7rem;
+  }
 }
 
 .card__body a {
