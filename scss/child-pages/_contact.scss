@@ -12,10 +12,11 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
-  padding: 50px;
+  padding: 25px;
 
   @include tablet {
     width: 70%;
+    padding: 50px;
   }
 
   @include desktop {
@@ -66,7 +67,11 @@
 .contact-form-container form {
   @include flex(flex-start, flex-start);
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 15px;
+
+  @include wide-mobile {
+    margin-top: 30px;
+  }
 
   @include tablet {
     margin-top: 50px;

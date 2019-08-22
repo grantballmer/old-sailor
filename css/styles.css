@@ -24,6 +24,12 @@ body {
   }
 }
 
+form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .btn {
   width: 45%;
   height: 40px;
@@ -2352,12 +2358,13 @@ footer .nav-menu {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
-  padding: 50px;
+  padding: 25px;
 }
 
 @media (min-width: 812px) {
   .contact-form-container {
     width: 70%;
+    padding: 50px;
   }
 }
 
@@ -2431,7 +2438,13 @@ footer .nav-menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 30px;
+  margin-top: 15px;
+}
+
+@media (min-width: 550px) {
+  .contact-form-container form {
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 812px) {

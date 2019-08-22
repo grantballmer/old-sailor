@@ -24,6 +24,12 @@ body {
   }
 }
 
+form {
+  input {
+    appearance: none;
+  }
+}
+
 @import "./_btn.scss";
 
 @import "./_navbar.scss";
