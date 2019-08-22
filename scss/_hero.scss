@@ -27,7 +27,7 @@
 }
 
 .page-hero {
-  height: 50vh;
+  height: 35vh;
   font-size: 3.4rem;
   font-weight: 700;
   flex-direction: row;
@@ -42,6 +42,7 @@
   }
 
   @include tablet {
+    height: 50vh;
     font-size: 5.4rem;
   }
 
