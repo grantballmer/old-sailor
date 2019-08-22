@@ -65,14 +65,15 @@
 
 .page-slide__info {
   // height: 40%;
-  font-size: 1.8rem;
-  line-height: 1.3;
+  font-size: 1.6rem;
+  line-height: 1.1;
   font-weight: 300;
-  margin-bottom: 2%;
 
   @include tablet {
     height: 20%;
     font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 2%;
   }
 
   span {
