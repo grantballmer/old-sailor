@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "embedo": "^1.12.0",
-    "handlebars": "^4.1.2"
+    "handlebars": "^4.7.7"
   },
   "devDependencies": {}
 }
